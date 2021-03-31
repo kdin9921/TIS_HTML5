@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13-imgmap</title>
+</head>
+<body>
+    <h1>imgmap</h1>
+    <img src="images/imgmap.gif" alt="" usemap="#mymap">
+    
+    <!-- name의 값은 html, css에서가 아니라 프로그램에서 쓰임 -->
+    <map name="mymap" id="mymap">
+        <area shape="rect" coords="10, 12, 105, 144" href="http://naver.com" alt="네이버와 연결">
+        <area shape="circle" coords="235, 98, 40" href="http://daum.net" alt="다음과 연결">
+        <area shape="poly" coords="265, 165, 291, 169, 299, 180, 276, 205, 251, 200, 246, 181"
+        href="http://google.com" alt="구글">
+    </map>
+</body>
+</html>
