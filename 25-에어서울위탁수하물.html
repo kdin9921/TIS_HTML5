@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25-에어서울위탁수하물</title>
+    <style>
+        table, tr, th, td { border : 3px solid red; border-collapse:collapse; }
+        table { text-align : center; }
+        th { background-color : lightgrey; width : 90px; height : 40px;}
+        #adult { background-color : white; font-weight : 400;}
+        #child { background-color : white; font-weight : 400;}
+        #none { background-color: rgb(248, 213, 200); font-weight : 700; }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th rowspan="2">구분</th>
+            <th colspan="2" id="regular">정규/할인 운임</th>
+            <th colspan="2" id="special">특가운임(프로모션 특가운임 한정)</th>
+        </tr>
+        <tr>
+            <th id="adult">성인/소아</th>
+            <th id="child">유아</th>
+            <th id="adult">성인/소아</th>
+            <th id="child">유아</th>
+        </tr>
+        <tr>
+            <td id="nomiju">미주 노선<br>제외</td>
+            <td headers="nomiju regular adult baggage">무게 : 15kg(33lbs) 이내<br>
+                크기 : 삼변의 합 203cm 이내<br>
+                허용 개수 : 1개</td>
+            <td rowspan="2" headers="regular child baggage">무게 : 10kg(221bs) 이내<br>
+                크기 : 삼변의 합 203cm 이내<br>
+                허용개수 : 1개 + 접을 수 있는 유모차,
+                유아용 카시트 중 1개 추가 가능</td>
+            <td colspan="2" id="none" headers="nomiju special baggage">수하물 없음</td>
+        </tr>
+        <tr>
+            <td id="miju">미주 노선</td>
+            <td headers="miju regular adult baggage">무게 : 23kg(501bs) 이내<br>
+                크기 : 삼변의 합 203cm 이내<br>
+                허용개수 : 2개</td>
+            <td headers="miju special adult baggage">정규/할인 운임과 동일</td>
+            <td headers="miju special child baggage">정규/할인 운임과 동일</td>
+        </tr>
+    </table>
+</body>
+</html>
