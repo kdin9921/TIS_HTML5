@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,16 @@
     <title>우리은행</title>
     <link rel="sortcut icon" href="images/favicon.ico">
 </head>
+
 <body>
     <!-- 영역 레이아웃 -->
     <!-- 1. 상단에 해당하는 부분 -->
     <div id="header">
         <div class="conCenter">
             <h1 class="logo"><a href="#"><img src="images/h1_01.png" alt="우리은행 로고"></a></h1>
-            
+
             <ul class="member">
-                <!-- li*2>a[href="#"]+ul>li*2>a[href="#"]-->
+                <!-- li*2>a[href="#"]+ul>li*2>a[href="#"] -->
                 <li>
                     <a href="#">로그인</a>
                     <ul class="menu">
@@ -33,10 +35,10 @@
             </ul>
 
             <ul id="nav">
-                <!-- li*5>a[href="#"]+div.subwrap>h2+ul.sub>li*12>a[href="#"] -->
+                <!-- li*5>a[href="#"]+div.subWrap>h2+ul.sub>li*12>a[href="#"] -->
                 <li>
                     <a href="#">개인</a>
-                    <div class="subwrap">
+                    <div class="subWrap">
                         <h2><a href="#">개인뱅킹</a></h2>
                         <ul class="sub">
                             <li><a href="#">조회</a></li>
@@ -56,7 +58,7 @@
                 </li>
                 <li>
                     <a href="#">기업</a>
-                    <div class="subwrap">
+                    <div class="subWrap">
                         <h2><a href="#">기업뱅킹</a></h2>
                         <ul class="sub">
                             <li><a href="#">조회</a></li>
@@ -76,7 +78,7 @@
                 </li>
                 <li>
                     <a href="#">자산관리</a>
-                    <div class="subwrap">
+                    <div class="subWrap">
                         <h2><a href="#">자산관리</a></h2>
                         <ul class="sub">
                             <li><a href="#">MY자산 진단</a></li>
@@ -89,7 +91,7 @@
                 </li>
                 <li>
                     <a href="#">금융상품</a>
-                    <div class="subwrap">
+                    <div class="subWrap">
                         <h2><a href="#">금융상품</a></h2>
                         <ul class="sub">
                             <li><a href="#">추천상품</a></li>
@@ -110,43 +112,218 @@
                     <a href="#">카드</a>
                 </li>
             </ul>
-        
+
             <ul class="gnb">
-                <!-- li*3>a[href="#"] -->
                 <li><a href="#">전체메뉴</a></li>
-                <li><a href="#">GLOBAL</a></li>
+                <li><a href="#">GOLOBAL</a>
                     <div>
                         <h2><a href="#">LANGUAGE</a></h2>
                         <ul>
                             <li><a href="#"><img src="images/flag_us.gif" alt="usa flag"><span>English</span></a></li>
-                            <li><a href="#"><img src="images/flag_china.gif" alt="china flag"><span>Chinese (中國語 )</span></a></li>
-                            <li><a href="#"><img src="images/flag_japan.gif" alt="japan flag"><span>Japanese (日本語)</span></a></li>
-                            <li><a href="#"><img src="images/flag_philippines.gif" alt="philippines flag"><span>Filipino (Tagalog)</span></a></li>
-                            <li><a href="#"><img src="images/flag_vietnam.gif" alt="vietnam flag"><span>Vietnamese (tiếng Việt)</span></a></li>
-                            <li><a href="#"><img src="images/flag_mongolia.gif" alt="mongolia flag"><span>Mongolian (Монгол хэл)</span></a></li>
+                            <li><a href="#"><img src="images/flag_china.gif" alt="china flag"><span>Chinese (中國語
+                                        )</span></a></li>
+                            <li><a href="#"><img src="images/flag_japan.gif" alt="japan flag"><span>Japanese
+                                        (日本語)</span></a></li>
+                            <li><a href="#"><img src="images/flag_philippines.gif" alt="philippines flag"><span>Filipino
+                                        (Tagalog)</span></a></li>
+                            <li><a href="#"><img src="images/flag_vietnam.gif" alt="vietnam flag"><span>Vietnamese
+                                        (tiếng Việt)</span></a></li>
+                            <li><a href="#"><img src="images/flag_mongolia.gif" alt="mongolia flag"><span>Mongolian
+                                        (Монгол хэл)</span></a></li>
                         </ul>
                     </div>
+                </li>
                 <li><a href="#"><img src="images/upper_search_icon.png" alt="검색버튼"></a></li>
             </ul>
+
         </div>
     </div>
     <hr>
 
     <!-- 2. 메인배너 영역 -->
     <div id="mainBanner">
-
+        <ul class="banner">
+            <li>banner1</li>
+            <li><a href="#">banner2 <span>자세히보기 &gt; </span></a></li>
+            <li><a href="#">banner3 <span>자세히보기 &gt; </span></a></li>
+        </ul>
+        <ul class="pageination">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+        <ul class="controlBtn">
+            <li class="playStop"><a href="#">play/stop</a></li>
+            <li class="leftBtn"><a href="#">left</a></li>
+            <li class="rightBtn"><a href="#">right</a></li>
+        </ul>
     </div>
     <hr>
 
     <!-- 3. 본문 영역 -->
     <div id="container">
+        <!-- 3-1 빠른메뉴 -->
+        <ul class="quick">
+            <li class="otherBank"><a href="#">다른은행<br>계좌조회</a></li>
+            <li><a href="#">조회</a></li>
+            <li><a href="#">이체</a></li>
+            <li><a href="#">환율</a></li>
+            <li class="quickMenu"><a href="#">빠른메뉴 </a></li>
+        </ul>
+        <ul class="etcMenu">
+            <li><a href="#">금융 소비자</a></li>
+            <li><a href="#">보호보안뉴스</a></li>
+            <li><a href="#">상품/약관 공시</a></li>
+        </ul>
 
+        <!-- 3-2 금융상품/카드 -->
+        <div class="financialCard">
+            <div class="conCenter">
+                <div class="financial">
+                    <h2 class="title">금융상품</h2>
+                    <ul>
+                        <li><a href="#"><span>예금</span></a></li>
+                        <li><a href="#"><span>대출</span></a></li>
+                        <li><a href="#"><span>펀드</span></a></li>
+                        <li><a href="#"><span>외환</span></a></li>
+                        <li><a href="#"><span>신탁</span></a></li>
+                        <li><a href="#"><span>퇴직연금</span></a></li>
+                        <li><a href="#"><span>보험</span></a></li>
+                        <li><a href="#"><span>ISA</span></a></li>
+                    </ul>
+
+                </div>
+                <div class="card">
+                    <h2 class="title">카드</h2>
+                    <ul>
+                        <li><a href="#"><span>카드신청</span></a></li>
+                        <li><a href="#"><span>나의카드</span></a></li>
+                        <li><a href="#"><span>이벤트</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 3-3 서비스 -->
+        <div class="service">
+            <div class="conCenter">
+                <h2 class="title">서비스</h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/image_service_04_b.png" alt="">
+                            <h3>우리WON뱅킹</h3>
+                            <p>새 시대의 금융을 켜다,<br>
+                                우리은행 대표 모바일뱅킹 APP</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/image_service_05.png" alt="">
+                            <h3>자산관리</h3>
+                            <p>소액투자부터 미래설계까지 효율적인 <br>
+                                자산관리를 시작하세요</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/image_service_02_b.png" alt="">
+                            <h3>스마트간편신규</h3>
+                            <p>직원에게 추천받으신 상품을<br>
+                                간편하게 가입하세요</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 3-4 새소식/이벤트 -->
+        <div class="newsEvent">
+            <div class="conCenter">
+                <div class="news">
+                    <h2 class="title">새소식</h2>
+                    <ul>
+                        <li><a href="#">[채용]2012년 상반기 우리은행 일반직 신입 채용공고</a><span>2021.04.06</span></li>
+                        <li><a href="#">[공지]우이WON뱅킹 실행이안되는 현상에 대한 조치방법 안내</a><span>2021.03.23</span></li>
+                        <li><a href="#">[공지]2021년 디노랩 2기 모집 안내</a><span>2021.03.22</span></li>
+                    </ul>
+                    <p class="more"><a href="#">더보기</a></p>
+
+                </div>
+                <div class="event">
+                    <h2 class="title">이벤트</h2>
+                    <ul>
+                        <li><a href="#">새봄, 새출발 청약저축 가입하고 경품 받으세요!</a></li>
+                        <li><a href="#">청년을 위한 우리미래드림바우처Ⅱ</a></li>
+                        <li><a href="#">우리 아이 첫 통장 만들고 1만원 받으세요!</a></li>
+                    </ul>
+                    <p class="more"><a href="#">더보기</a></p>
+                </div>
+            </div>
+        </div>
     </div>
     <hr>
-
     <!-- 4. 하단에 해당하는 부분 -->
     <div id="footer">
-
+        <div class="footTop">
+            <div class="conCenter">
+                <ul class="footMenu">
+                    <li><a href="#">대표 1588-5000</a></li>
+                    <li><a href="#">기타 서비스</a></li>
+                    <li><a href="#">LANGUAGE</a></li>
+                    <li><a href="#">패밀리사이트</a></li>
+                </ul>
+                <ul class="sns">
+                    <li><a href="#"><img src="images/icon_facebook_gray.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="images/icon_instagram_gray.png" alt="instagram"></a></li>
+                    <li><a href="#"><img src="images/icon_post_naver_gray.png" alt="post"></a></li>
+                    <li><a href="#"><img src="images/icon_youtube_gray.png" alt="youtube"></a></li>
+                    <li><a href="#"><img src="images/icon_navertv_gray.png" alt="navertv"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footBottom">
+            <div class="conCenter">
+                <p><img src="images/icon_woori.gif" alt=""></p>
+                <ul class="footList">
+                    <li><a href="#">은행소개</a></li>
+                    <li><a href="#">영업점안내</a></li>
+                    <li><a href="#">고객광장</a></li>
+                    <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="#"><strong>신용정보활용체제</strong></a></li>
+                    <li><a href="#">개인신용정보관리보호</a></li>
+                    <li><a href="#">사고신고</a></li>
+                    <li><a href="#">전자민원접수</a></li>
+                    <li><a href="#">보호금융상품등록부</a></li>
+                    <li><a href="#">상품공시실</a></li>
+                    <li><a href="#">보안센터</a></li>
+                    <li><a href="#">웹접근성 이용안내</a></li>
+                </ul>
+                <small>COPYRIGHTS WOORI BANK. ALL RIGHTS RESERVED.</small>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/icon_kwacc_ib.gif" alt="">
+                            <div class="textBox">2020 웹 접근성<br>
+                                우수사이트</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/icon_1_new.gif" alt="">
+                            <div class="textBox">2019 고객감동경영대상<br>
+                                종합대상 12년 연속 수상</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/icon_20201215.png" alt="">
+                            <div class="textBox">2019 고객감동경영대상<br>
+                                종합대상 12년 연속 수상</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
